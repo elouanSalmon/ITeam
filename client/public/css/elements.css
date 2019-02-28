@@ -39,7 +39,7 @@ body {
 }
 
 .btn_purple {
-  background-color: #780877;
+  background-color: #780877 !important;
 }
 
 .btn_grad {
@@ -52,20 +52,47 @@ body {
   color: rgba(10, 10, 10, 0);
 }
 
-.header {
+header {
   color: white;
   background-image: -webkit-gradient(linear, left top, right top, from(#858EFE), to(#AC78E8));
   background-image: linear-gradient(to right, #858EFE, #AC78E8);
 }
 
-footer {
+.footer {
   height: 10vh;
   color: white;
   background-image: -webkit-gradient(linear, left top, right top, from(#858EFE), to(#AC78E8));
   background-image: linear-gradient(to right, #858EFE, #AC78E8);
 }
 
-footer .col-4 {
+.footer .row .col-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer a {
+  color: transparent !important;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.footer a:hover {
+  color: transparent !important;
+}
+
+.footer a:focus {
+  color: transparent !important;
+}
+
+.footer .col-4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,10 +106,8 @@ footer .col-4 {
   text-align: center;
 }
 
-footer .icon {
+.footer .icon {
   font-size: 6vh;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
 }
 
 .aside {
@@ -100,18 +125,6 @@ h5 {
 
 p {
   font-family: "Muli", sans-serif;
-}
-
-a {
-  color: transparent !important;
-}
-
-a:hover {
-  color: transparent !important;
-}
-
-a:focus {
-  color: transparent !important;
 }
 
 /*icon*/
@@ -255,6 +268,7 @@ a:focus {
   transition: all .2s ease-in-out;
   height: 600px;
   max-height: 30vh;
+  border-radius: 1vh !important;
 }
 
 .imgAnswer .card:hover {
@@ -438,5 +452,80 @@ a:focus {
 
 .icon-volume-increase {
   color: transparent;
+}
+
+.icon-badge {
+  font-size: 10vh;
+  color: #94C6E8;
+}
+
+.sidenav {
+  background-color: #780877;
+}
+
+.sidenav a {
+  color: white !important;
+  font-family: "Muli", sans-serif;
+}
+
+.sidenav .sidebar-nav {
+  margin-top: 10vh;
+}
+
+.imgAdapt {
+  width: 100%;
+}
+
+.text-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.result {
+  height: 90vh;
+}
+
+.quizPresentation {
+  margin-top: 1vh;
+  padding-top: 1vh;
+}
+
+.quizPresentation .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.quizPresentation .card {
+  margin: 1vh;
+}
+
+/*homepage*/
+.page-footer {
+  margin-top: 1vh;
+  padding-top: 1vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(#858EFE), to(#94C6E8)) !important;
+  background-image: linear-gradient(to right, #858EFE, #94C6E8) !important;
+}
+
+.page-footer a,
+.page-footer p,
+.page-footer h5 {
+  color: white !important;
 }
 /*# sourceMappingURL=elements.css.map */

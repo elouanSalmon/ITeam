@@ -42,7 +42,7 @@ body {
 }
 
 .btn_purple {
-  background-color: #780877;
+  background-color: #780877 !important;
 }
 
 .btn_grad {
@@ -55,20 +55,47 @@ body {
   color: rgba(10, 10, 10, 0);
 }
 
-.header {
+header {
   color: white;
   background-image: -webkit-gradient(linear, left top, right top, from(#858EFE), to(#AC78E8));
   background-image: linear-gradient(to right, #858EFE, #AC78E8);
 }
 
-footer {
+.footer {
   height: 10vh;
   color: white;
   background-image: -webkit-gradient(linear, left top, right top, from(#858EFE), to(#AC78E8));
   background-image: linear-gradient(to right, #858EFE, #AC78E8);
 }
 
-footer .col-4 {
+.footer .row .col-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer a {
+  color: transparent !important;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.footer a:hover {
+  color: transparent !important;
+}
+
+.footer a:focus {
+  color: transparent !important;
+}
+
+.footer .col-4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,10 +109,8 @@ footer .col-4 {
   text-align: center;
 }
 
-footer .icon {
+.footer .icon {
   font-size: 6vh;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
 }
 
 .aside {
@@ -101,29 +126,8 @@ h5 {
   font-family: "Baloo", cursive;
 }
 
-.box img{
-
-  height: 300px;
-  width: 300px;  
-}
-.one_question
-{
-  border: 1em;
-  border-color: red;
-   float:left;
-   margin-left: 1em;
-}
-
-a {
-  color: transparent !important;
-}
-
-a:hover {
-  color: transparent !important;
-}
-
-a:focus {
-  color: transparent !important;
+p {
+  font-family: "Muli", sans-serif;
 }
 
 /*icon*/
@@ -161,185 +165,6 @@ a:focus {
 
 .textQuestion .question {
   font-family: "Baloo", cursive !important;
-}
-/*zoning style*/
-.main {
-  color: rgba(10, 10, 10, 0);
-}
-
-.header {
-  color: white;
-  background-image: -webkit-gradient(linear, left top, right top, from(#858EFE), to(#AC78E8));
-  background-image: linear-gradient(to right, #858EFE, #AC78E8);
-}
-
-footer {
-  color: white;
-  background-image: -webkit-gradient(linear, left top, right top, from(#858EFE), to(#AC78E8));
-  background-image: linear-gradient(to right, #858EFE, #AC78E8);
-  background-color: aquamarine;
-}
-
-.aside {
-  background-color: #94C6E8;
-}
-
-/*text*/
-h1, h2, h3, h4, h5 {
-  font-family: "Baloo", cursive;
-}
-
-.box img{
-
-  height: 300px;
-  width: 300px;  
-}
-.one_question
-{
-  border: 1em;
-  border-color: red;
-   float:left;
-   margin-left: 1em;
-}
-
-.checkbox{
-  border-radius: 12px;
-}
-
-.homeText1{
-float: left;
-font-size: 40px;
-}
-
-.homeImg1{
-float: right;
-height: 10em;
-}
-
-.homeText2{
-  float: right;
-}
-  
-.homeImg2{
-  float: left;
-}
-
-
-
-
-
-.HomeTitle{
-  text-align: center;
-font-size: 100px;
-padding-bottom: 10px;
-
-  
-}
-
-.HomeHeader{
-
-  background-color: turquoise;
-  margin-top: -6em;
-  margin-left: -2em;
-  margin-right: -2em;
-  
-  
-}
-.HomeHeader img{
-  height: 170px;
-  width: 170px;
-
-}
-
-.favi{
-  height: 110px;
-  width: 110px;
-  float: left;
-}
-
-.imageSquare img{
-  background-color: blue;
-  opacity: .2;
-}
-#img1{
-  height :300px;
-  float: right;
-}
-
-
-
-
-
-
-
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-
-* {
-  box-sizing: border-box;
-}
-
-.box {
-  float: left;
-  width: 33.33%;
-  padding: 50px;
-}
-
-.box img{
-  height: 470px;
-width:470px;}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.box h2{
-  font-size: 70px;
 }
 
 .textQuestion .card {
@@ -446,6 +271,7 @@ width:470px;}
   transition: all .2s ease-in-out;
   height: 600px;
   max-height: 30vh;
+  border-radius: 1vh !important;
 }
 
 .imgAnswer .card:hover {
@@ -481,6 +307,7 @@ width:470px;}
   padding-left: 0px;
   padding-right: 0px;
 }
+
 .result {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -629,3 +456,89 @@ width:470px;}
 .icon-volume-increase {
   color: transparent;
 }
+
+.icon-badge {
+  font-size: 10vh;
+  color: #94C6E8;
+}
+
+.sidenav {
+  background-color: #780877;
+}
+
+.sidenav a {
+  color: white !important;
+  font-family: "Muli", sans-serif;
+}
+
+.sidenav .sidebar-nav {
+  margin-top: 10vh;
+}
+
+.imgAdapt {
+  width: 100%;
+}
+
+.text-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.result {
+  height: 90vh;
+}
+
+.quizPresentation {
+  margin-top: 1vh;
+  padding-top: 1vh;
+}
+
+.quizPresentation .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.quizPresentation .card {
+  margin: 1vh;
+}
+
+/*homepage*/
+.page-footer {
+  margin-top: 1vh;
+  padding-top: 1vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(#858EFE), to(#94C6E8)) !important;
+  background-image: linear-gradient(to right, #858EFE, #94C6E8) !important;
+}
+
+.page-footer a,
+.page-footer p,
+.page-footer h5 {
+  color: white !important;
+}
+
+.box img {
+  height: 300px;
+  width: 300px;
+}
+
+.one_question {
+  float: left;
+  margin-left: float_margin;
+}
+/*# sourceMappingURL=style.css.map */

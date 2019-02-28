@@ -16,37 +16,75 @@
 </head>
 
 <body>
+    <div class="logoQuiz">
+        <span onclick="openNav()" class="favi icon-logo icon">
+
+        </span>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <div class="sidebar-nav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="container-fluid">
-                <div class="row result">
-                    <span class="icon-badge icon"></span>
-                    <div>
-                        <h1> Your final score is : 10 / 10 ! Nice job</h1>
-                    </div>
+                <div class="row">
+                    <col-6></col-6>
+                    <col-6></col-6>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="fixed-bottom">
+    <div class="container-fluid">
+        <div class="row result">
+            <div class="col-12 text-area result">
+                <span class="icon-badge icon"></span>
+                <div>
+                    <h3> Your score:</h3>
+                    <h1> 10 / 10 </h1>
+                    <h3>Nice job !</h3>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="fixed-bottom footer">
         <div class="container">
             <div class="row">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-4">
-
+                            <span class="icon-volume-increase icon"></span>
                         </div>
                         <div class="col-4">
-                            <span class="icon-list2 icon"></span>
+                            <a href="file:///D:/Users/eloua/Desktop/A_MMI2/intégration/followTheGuide/ITeam/client/src/Page/homepage.html#"><span
+                                    class="icon-list2 icon"></span></a>
                         </div>
                         <div class="col-4">
-
+                            <span class="icon-volume-increase icon"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
 </body>
 
 </html>

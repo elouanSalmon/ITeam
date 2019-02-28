@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../../public/css/style.css" />
-    <link rel="stylesheet" href="../../public/css/icon/style.css" />
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../public/css/style.css" />
+  <link rel="stylesheet" href="../../public/css/icon/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <title>Home</title>
 
 
 
@@ -18,80 +21,152 @@
 
 
 </head>
+
 <body>
 
-    <div id="main">
+  <div id="main">
 
-    <header  class="HomeHeader"><img onclick="openNav()" class="favi"src="../../public/favicon.ico"><h1 class="HomeTitle">Home</h1></header>
+    <div class="logoQuiz">
+      <span onclick="openNav()" class="favi icon-logo icon">
+
+      </span>
+    </div>
     <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+      <div class="sidebar-nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="container-fluid">
+          <div class="row">
+            <col-6></col-6>
+            <col-6></col-6>
           </div>
-
-
-
-
-
-
-
-
-    
-
-
-  
-
-      <div class="clearfix">
-        <div class="box" >
-        </div>
-        <div class="box" >
-            <h2>Are you a teacher ? 
-                
-                Our service allow you to create simply and fastly for your students. </h2>
-        </div>
-        <div class="box" >
-            <img class="img2" src="../../../server/resources/pictures/home/guide-1az.svg">
         </div>
       </div>
+    </div>
 
+    <div class="container">
+      <div class="row">
 
-
-
-
-      <div class="clearfix">
-        <div class="box" >
+        <div class="col-6 text-area">
+          <h1> Are you a teacher ?</h1>
+          <p>Our service allows you to create simply and fastly for your students.
+            <p>-Reduce paper use and planned work</p>
+            <p>-Teach in a fun way</p>
+            <p>-Create your own quiz quickly and easily </p>
+            <p>-Ready to use quizzes</p>
+            <button type="button" class="btn btn_grad">Start now</button>
+          </p>
         </div>
-        <div class="box" >
-            <img class="img2" src="../../../server/resources/pictures/home/student.svg">
+
+        <div class="col-6">
+          <img class="imgAdapt " src="./image/student.jpg" alt="">
         </div>
-        <div class="box" >
-            <h2>
-                Are you a student ?
-                
-                Let's start with the game ! Enjoy quiz on the museum you're visiting now !
-                </h2>
-        </div>
+
       </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-6">
+          <img class="imgAdapt" src="./image/museum_1.jpg" alt="">
+        </div>
+
+        <div class="col-6 text-area">
+          <h1>Are you a student ?</h1>
+          <p>Let's start with the game ! Enjoy quiz on the museum you're visiting now !</p>
+          <button type="button" class="btn btn_grad">Start now</button>
+        </div>
+
+      </div>
+    </div>
+    <div class="container quizPresentation">
+      <div class="row">
+        <div class="card col-3">
+          <img class="card-img-top" src="https://culturebox.francetvinfo.fr/sites/default/files/assets/images/2018/10/louvre_lens.jpg"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Louvre Lens</h5>
+            <p class="card-text">The Louvre-Lens is a public institution of cultural cooperation of an administrative
+              nature founded by the Regional Council of Nord-Pas-de-Calais...</p>
+            <a href="file:///D:/Users/eloua/Desktop/A_MMI2/intégration/followTheGuide/ITeam/client/src/Page/quizFirst.html" class="btn btn_purple ">Start this quiz</a>
+          </div>
+        </div>
+
+        <div class="card col-3">
+          <img class="card-img-top" src="https://d39gusjpdm7p1o.cloudfront.net/data/layout_grouping/product_index_slideshow/49422/pompidou-web.1000w.jpg?ver=1533741208"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Georges-Pompidou (CNAC)</h5>
+            <p class="card-text">Le Centre national d'art et de culture Georges-Pompidou (CNAC) is a polycultural
+              institution born of the desire of President Georges Pompidou, a great lover of modern art...</p>
+            <a href="#" class="btn btn_purple ">Start this quiz</a>
+          </div>
+        </div>
+
+        <div class="card col-3">
+          <img class="card-img-top" src="https://i2.wp.com/www.famillefrancetrotteuse.fr/wp-content/uploads/2017/04/DSC_0306.jpg?resize=1080%2C720&ssl=1"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Galery of the evolution</h5>
+            <p class="card-text">The Grand Galerie de l'Évolution is one of the galleries of the Muséum national
+              d'histoire naturelle. The Museum's galleries are buildings that in themselves constitute ...</p>
+            <a href="#" class="btn btn_purple ">Start this quiz</a>
+          </div>
+        </div>
 
 
-</div>
+      </div>
+    </div>
 
+    <footer class="container-fluid page-footer pt-4">
+
+      <!-- Footer Elements -->
+      <div class="container">
+
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <h5 class="mb-1">Register for free</h5>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="btn btn-rounded btn_purple ">Sign up!</a>
+          </li>
+        </ul>
+        <!-- Call to action -->
+
+      </div>
+      <!-- Footer Elements -->
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        <a href="followtheguide.com">© 2019 Copyright: followtheguide.com</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
 
     <script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
 
 
-    
+
 </body>
+
 </html>
