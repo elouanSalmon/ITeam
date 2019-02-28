@@ -107,8 +107,6 @@ p {
 
 a {
   color: transparent !important;
-  width: 100%;
-  height: 100%;
 }
 
 a:hover {
@@ -294,5 +292,154 @@ a:focus {
   margin: 0px;
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+/*sidebar*/
+.checkbox {
+  border-radius: 12px;
+}
+
+.homeText1 {
+  float: left;
+  font-size: 40px;
+}
+
+.homeImg1 {
+  float: right;
+  height: 10em;
+}
+
+.homeText2 {
+  float: right;
+}
+
+.homeImg2 {
+  float: left;
+}
+
+.HomeTitle {
+  text-align: center;
+  font-size: 100px;
+  padding-bottom: 10px;
+}
+
+.HomeHeader {
+  background-color: turquoise;
+  margin-top: -6em;
+  margin-left: -2em;
+  margin-right: -2em;
+}
+
+.HomeHeader img {
+  height: 170px;
+  width: 170px;
+}
+
+.favi {
+  height: 110px;
+  width: 110px;
+  float: left;
+}
+
+.imageSquare img {
+  background-color: blue;
+  opacity: .2;
+}
+
+#img1 {
+  height: 300px;
+  float: right;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.box img {
+  height: 470px;
+  width: 470px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.box h2 {
+  font-size: 70px;
+}
+
+.icon-volume-increase {
+  color: transparent;
 }
 /*# sourceMappingURL=style.css.map */
