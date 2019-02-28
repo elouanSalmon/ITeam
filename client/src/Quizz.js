@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { quizzes, users } from './examples';
 import { Link } from 'react-router-dom';
 import { HTTP_SERVER_PORT_PICTURES, HTTP_SERVER_PORT  } from './constants.js';
-
 import axios from 'axios';
 
 
@@ -66,6 +65,10 @@ class Quizz extends Component {
         this.setState({ current: newIndex });
     }
 
+   /* calculScore() {
+        if(this.question.solution == checkedAnswers) {
+            this.prompt.score = this.prompt.score+this.question.points;
+
     validate(e) {
         let newState = "validated";
         this.setState({ state: newState });
@@ -73,7 +76,7 @@ class Quizz extends Component {
         this.calculScore(e);
         this.setState({current : this.state.current + 1, toValidate : tmp});
     }
-
+*/
     calculScore(e) {
         let t = document.getElementsByClassName("myAnswers");
         let rep = [];
@@ -81,7 +84,6 @@ class Quizz extends Component {
             if (t[i].checked)
                rep.push(i);
         console.log("rep",rep);
-        //        
         const win = (rep.join() == this.state.quizz.questions[this.state.current].solutions.join() )
         if (win == true) {
             let newScore = this.state.score + this.state.quizz.questions[this.state.current].points;
@@ -131,7 +133,7 @@ class Quizz extends Component {
                     nextQuestion={() => this.nextQuestion()}
                     previousQuestion={() => this.previousQuestion()}
                     score={0}
-                    validate = {this.validate}
+                    Validate = {this.Validate}
                 />
             </div>
         )
