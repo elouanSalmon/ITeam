@@ -43,26 +43,26 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-6">
-                            <div class="card col-12">
+                            <div class="card col-12" onclick=selected(this)>
                                 <h3 class="question">4th December 2012</h3>
                             </div>
 
                         </div>
 
                         <div class="col-6">
-                            <div class="card col-12">
+                            <div class="card col-12" onclick=selected(this)>
                                 <h3 class="question">14th March 2016</h3>
                             </div>
                         </div>
 
                         <div class="col-6">
-                            <div class="card col-12">
+                            <div class="card col-12" onclick=selected(this)>
                                 <h3 class="question">3rd December 2001</h3>
                             </div>
                         </div>
 
                         <div class="col-6">
-                            <div class="card col-12">
+                            <div class="card col-12" onclick=selected(this)>
                                 <h3 class="question">9th September 2005</h3>
                             </div>
                         </div>
@@ -115,6 +115,24 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+                var divItems = document.getElementsByClassName("card");
+        
+                function selected(item) {
+                    this.clear();
+                    item.style.backgroundColor = '#780877';
+                    item.style.color = "white";
+                }
+        
+                function clear() {
+                    for (var i = 0; i < divItems.length; i++) {
+                        var item = divItems[i];
+                        item.style.backgroundColor = 'white';
+                        item.style.color = "black";
+                    }
+                }
+            </script>
 </body>
 
 </html>
